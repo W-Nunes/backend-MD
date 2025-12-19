@@ -14,7 +14,7 @@ from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 app = Flask(__name__)
 CORS(app)
 
-CORS(app, resources={r"/api/*": {"origins": ["https://site.suporteverde.com.br/md/", "http://localhost:5173"]}})
+CORS(app, resources={r"/api/*": {"origins": ["https://site.suporteverde.com.br", "http://localhost:5173"]}})
 
 DB_NAME = "sistema_notas_v2.db"
 
